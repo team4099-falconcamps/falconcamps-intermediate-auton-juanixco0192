@@ -6,12 +6,13 @@ import edu.wpi.first.wpilibj2.command.CommandBase;
 public class ShootCommand extends CommandBase {
     private Shooter shooter;
 
-    public ShootCommand(int i) {
-        this.shooter = i;
+    public ShootCommand(Shooter shooter) {
+        this.shooter = shooter;
     }
 
     @Override
     public void initialize() {
         shooter.setSetpoint(5000);
     }
+
 }
