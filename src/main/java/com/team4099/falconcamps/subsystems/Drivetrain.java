@@ -26,7 +26,7 @@ public class Drivetrain extends SubsystemBase {
         
     }
     public double measurementInMetersRight() {
-        return encoderTicksToMeters(right.getSelectedSensorPosition())
+        return encoderTicksToMeters(right.getSelectedSensorPosition());
     }
       public void setLRPower(double leftPower, double rightPower) {
         left.set(ControlMode.PercentOutput, leftPower);
